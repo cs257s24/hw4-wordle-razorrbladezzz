@@ -1,2 +1,1 @@
-# mad-dummy
-standard template
+# nothing here
