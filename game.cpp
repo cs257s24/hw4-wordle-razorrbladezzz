@@ -37,11 +37,40 @@ string readDictionary(vector<string> &words) {
     return words[random_index];
 }
 
-void wordColors(string &guess, string &secret_word, vector<string> &words) {
+bool errorOccurred = false;
+
+bool wordColors(string &guess, string &secret_word, vector<string> &words, int &guessCount) {
     // if guess is NOT in words OR guess is NOT five letters long
-    // if (find(words.begin(), words.end(), guess) == words.end() || guess.size() != 5) {
-        // clear the guess and have user try again
+    if (find(words.begin(), words.end(), guess) == words.end() || guess.size() != 5) {
+        cout << "\n\033[A\33[2K\r";
+        cout << "! Try again, must be a real word and 5 letters long.";
+
+        if (!errorOccurred) {
+            guessCount -= 1;
+            errorOccurred = true;
+        }
+        
+        return 1;
+    } else {
+        guessCount += 1;
+        errorOccurred = false;
+    }
+    
+    // for (char c : guess) {
+    //     // if guess has number
+    //     if (isdigit(c)) {
+    //         cout << "\n\033[A\33[2K\r";
+    //         cout << "! Try again, must be a real word and 5 letters long.";
+    //         return 1;
+    //     }
+    //     // if guess has special character
+    //     // if (isalnum(c)){
+    //     //     cout << "\n\033[A\33[2K\r";
+    //     //     cout << "! Try again";
+    //     //     return 1;
+    //     // }
     // }
+
     map<char, bool> duplicates;
 
     for (int i = 0; i < guess.size(); ++i) {
@@ -55,6 +84,8 @@ void wordColors(string &guess, string &secret_word, vector<string> &words) {
             makeGrey(guess[i]);
         }
     }
+
+    return 0;
 }
 
 bool guessWord(string &guess, string &secret_word) {

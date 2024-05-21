@@ -32,7 +32,7 @@ string readDictionary(vector<string> &words);
 // - string &secret_word: the secret word of which the guess is compared to
 // - vector<string> &words: the list of possible words
 // Returns: void, but it changes the guess string by coloring its letters
-void wordColors(string &guess, string &secret_word, vector<string> &words);
+void wordColors(string &guess, string &secret_word, vector<string> &words, int &guessCount);
 
 // Guess Word
 // - Checks if any input of guess matches the secret word

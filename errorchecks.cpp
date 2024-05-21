@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cctype>
 using namespace std;
 
 
@@ -12,6 +13,16 @@ using namespace std;
 
 // check for numbers()
 // - clears word, no response
+bool numberCheck(string &guess) {
+    for (char c : guess) {
+        if (isdigit(c)) {
+            // string readInputAndClear();
+            cout << "\n\033[A\33[2K\r";
+            return 1;
+        }
+    }
+    return 0;
+}
 
 // check for special characters()
 // - clears word, no response
