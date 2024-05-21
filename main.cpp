@@ -3,6 +3,7 @@
 #include <vector>
 #include <set>
 #include "game.h"
+
 using namespace std;
 
 
@@ -20,7 +21,7 @@ int main() {
  ░░█████████ ░░████████  ░░█████ ░░████████ █████░░██████ 
   ░░░░░░░░░   ░░░░░░░░    ░░░░░   ░░░░░░░░ ░░░░░  ░░░░░░  )" << endl;
 
-    cout << "\n[Press ENTER to continue]";
+    cout << "\n[Press ENTER to continue]\n";
     cin.get();
 
     cout << R"(
@@ -41,7 +42,7 @@ int main() {
     cout << "Rules:" << endl;
     cout << "- Six guesses total :3\n- No numbers :3\n- No special characters :3\n- Five-letter words only :3\n- Invalid words will be cleared :3" << endl;
 
-    cout << "\n[Press ENTER to continue]";
+    cout << "\n[Press ENTER to continue]\n";
     cin.get();
 
     do {
