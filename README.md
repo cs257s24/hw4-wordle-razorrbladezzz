@@ -1,4 +1,6 @@
-# How to use
+# Catdle
+
+### <u> How to use </u>
 To play:
 ```
 make

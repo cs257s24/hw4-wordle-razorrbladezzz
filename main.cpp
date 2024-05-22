@@ -12,6 +12,7 @@ int main() {
     string playAgain;
 
     cout << R"(
+        
    █████████             █████        █████ ████        
   ███░░░░░███           ░░███        ░░███ ░░███          
  ███     ░░░   ██████   ███████    ███████  ░███   ██████ 
@@ -19,7 +20,8 @@ int main() {
 ░███           ███████   ░███    ░███ ░███  ░███ ░███████ 
 ░░███     ███ ███░░███   ░███ ███░███ ░███  ░███ ░███░░░  
  ░░█████████ ░░████████  ░░█████ ░░████████ █████░░██████ 
-  ░░░░░░░░░   ░░░░░░░░    ░░░░░   ░░░░░░░░ ░░░░░  ░░░░░░  )" << endl;
+  ░░░░░░░░░   ░░░░░░░░    ░░░░░   ░░░░░░░░ ░░░░░  ░░░░░░  
+  )" << endl;
 
     cout << "\n[Press ENTER to continue]\n";
     cin.get();
@@ -31,7 +33,7 @@ int main() {
  ( --\ |--\ (`.`-.
      --'  --'  ``-' )" << endl;
 
-    cout << "How to play:\nThere is a hidden word, and you must guess it!\nThe colors will change, and they're all clues.\n- "
+    cout << "\033[4m" << "How to play:" << "\033[0m" << "\nThere is a hidden word, and you must guess it!\nThe colors will change, and they're all clues.\n- "
     << "\033[0;102m" << "Green" << "\033[0m" << ": letter is in the right spot!\n- " << "\033[0;103m" << "Yellow" <<
     "\033[0m" << ": letter is in the secret word, but wrong spot\n- " << "\033[47m" << "Grey"
     << "\033[0m" << ": letter is not in the secret word :(" << endl;
@@ -39,7 +41,7 @@ int main() {
     cout << "\n[Press ENTER to continue]" << endl;
     cin.get();
 
-    cout << "Rules:" << endl;
+    cout << "\033[4m" << "Rules:" << "\033[0m" << endl;
     cout << "- Six guesses total :3\n- No numbers :3\n- No special characters :3\n- Five-letter words only :3\n- Invalid words will be cleared :3" << endl;
 
     cout << "\n[Press ENTER to continue]\n";

@@ -2248,7 +2248,6 @@ oozed
 sedan
 clays
 warts
-ketch
 skunk
 manes
 adore
@@ -2558,10 +2557,8 @@ chasm
 longs
 excel
 taffy
-impel
 savor
 koala
-quays
 dawns
 proxy
 clove
@@ -2604,7 +2601,6 @@ felts
 askew
 munch
 mewed
-divan
 vices
 jumbo
 blobs
@@ -2631,7 +2627,6 @@ hoots
 oozes
 lamed
 fouls
-clefs
 nicks
 mated
 skims
@@ -2642,15 +2637,12 @@ fates
 ditty
 thins
 frets
-eider
 bayou
 mulch
 fasts
 amass
 damps
 morns
-friar
-palsy
 vista
 croon
 conch
@@ -3456,7 +3448,6 @@ amity
 suave
 hippo
 curvy
-samba
 aways
 liven
 hallo
