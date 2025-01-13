@@ -62,7 +62,6 @@ int main() {
         cout << "\nA word has been chosen, submit your guesses below: \n12345" << endl;
 
         while (true) {
-            // cin >> guess;
             string guess = readInputAndClear();
             wordColors(guess, secret_word, words, guessCount);
             cout << endl;
