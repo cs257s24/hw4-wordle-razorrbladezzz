@@ -30,7 +30,6 @@ string readDictionary(vector<string> &words) {
 
     if (!words.empty()) {
         random_index = randomizer(words.size()) - 1;
-        // cout << "Random word: " << words[random_index] << endl;
     } else {
         cout << "Error, no words found in file." << endl;
     }
@@ -56,21 +55,6 @@ bool wordColors(string &guess, string &secret_word, vector<string> &words, int &
         guessCount += 1;
         errorOccurred = false;
     }
-    
-    // for (char c : guess) {
-    //     // if guess has number
-    //     if (isdigit(c)) {
-    //         cout << "\n\033[A\33[2K\r";
-    //         cout << "! Try again, must be a real word and 5 letters long.";
-    //         return 1;
-    //     }
-    //     // if guess has special character
-    //     // if (isalnum(c)){
-    //     //     cout << "\n\033[A\33[2K\r";
-    //     //     cout << "! Try again";
-    //     //     return 1;
-    //     // }
-    // }
 
     map<char, bool> duplicates;
 
